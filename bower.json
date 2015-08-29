@@ -1,6 +1,6 @@
 {
   "name": "angular-titip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dVelopment/angular-titip",
   "authors": [
     "Daniel Holzmann <d@velopment.at>"
@@ -30,7 +30,8 @@
     ".gitignore",
     "gulpfile.js",
     "karma.conf.js",
-    ".bowerc"
+    ".bowerc",
+    "README.md"
   ],
   "dependencies": {
     "angular": "~1.4.5",
