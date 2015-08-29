@@ -1,0 +1,40 @@
+{
+  "name": "angular-titip",
+  "version": "1.0.0",
+  "description": "Angular directive for pure CSS tooltips",
+  "main": "dist/angular-titip.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-coverage": "^0.5.1",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dVelopment/angular-titip.git"
+  },
+  "keywords": [
+    "angular",
+    "tooltip",
+    "tooltips",
+    "titip"
+  ],
+  "author": "Daniel Holzmann <d@velopment.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dVelopment/angular-titip/issues"
+  },
+  "homepage": "https://github.com/dVelopment/angular-titip#readme"
+}

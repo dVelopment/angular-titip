@@ -1,0 +1,42 @@
+{
+  "name": "angular-titip",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dVelopment/angular-titip",
+  "authors": [
+    "Daniel Holzmann <d@velopment.at>"
+  ],
+  "description": "Angular directive for pure CSS tooltips",
+  "main": "dist/angular-titip.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "tooltip",
+    "tooltips",
+    "titip"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests",
+    "doc",
+    "src",
+    ".editorconfig",
+    ".gitignore",
+    "gulpfile.js",
+    "karma.conf.js",
+    ".bowerc"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "titip": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.5"
+  }
+}
