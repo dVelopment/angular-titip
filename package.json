@@ -1,6 +1,6 @@
 {
   "name": "angular-titip",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Angular directive for pure CSS tooltips",
   "main": "dist/angular-titip.js",
   "directories": {
