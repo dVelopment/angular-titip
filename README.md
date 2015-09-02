@@ -63,3 +63,14 @@ You can add animations by adding `tooltip-animation`.
 ```html
 <a href="#" tooltip title="Fading tooltip" tooltip-animation="fade"></a>
 ```
+
+## FAQ
+
+
+### What are you talking about? "Angular directive" and "Pure CSS" don't fit together ...
+
+Yeah, you're right. There is of course some javascript involved. But the javascript doesn't actually create and position the tooltips – it just adds the appropriate CSS classes to the element.
+
+### So why then even bother with creating a directive, if all you need are CSS classes?
+
+Of course you don't need this directive. It just offers you an "angular way" of (dynamically) creating the tooltips and imho makes using them a little more clear.
