@@ -53,13 +53,6 @@ You can select one of the default themes (`primary`, `warning`, `danger`, `succe
 ```html
 <a href="#" tooltip title="Warning tooltip" tooltip-theme="warning"></a>
 ```
-### Border
-
-You can add a border by adding `tooltip-border="true"`
-
-```html
-<a href="#" tooltip title="This tooltip has a border" tooltip-border="true"></a>
-```
 
 ### Animation
 

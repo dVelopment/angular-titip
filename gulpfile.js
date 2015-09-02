@@ -3,7 +3,11 @@
 var gulp = require('gulp'),
     Server = require('karma').Server,
     rename = require('gulp-rename'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer'),
+    rename = require('gulp-rename');
 
 gulp.task('test', function(done) {
     new Server({
@@ -18,7 +22,21 @@ gulp.task('compile', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['compile'], function() {
+gulp.task('examples', ['compile'], function () {
+    var b = browserify({
+        entries: './examples/commonjs/app.js',
+        debug: false
+    });
+
+    return b.bundle()
+        .pipe(source('app.js'))
+        .pipe(buffer())
+        .pipe(uglify())
+        .pipe(rename('app.bundle.js'))
+        .pipe(gulp.dest('./examples/commonjs'));
+});
+
+gulp.task('build', ['examples'], function() {
     return gulp.src('dist/angular-titip.js')
         .pipe(uglify())
         .pipe(rename('angular-titip.min.js'))

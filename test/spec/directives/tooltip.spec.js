@@ -59,20 +59,6 @@ describe('directive: tooltip', function() {
         });
     });
 
-    describe('border', function() {
-        var element;
-
-        beforeEach(inject(function($rootScope, $compile) {
-            var html = '<a href="#" tooltip title="My themed tooltip" tooltip-border="true"></a>';
-
-            element = createElement(html, $rootScope, $compile);
-        }));
-
-        it('should have the class thick-border', function() {
-            expect(element.hasClass('thick-border')).toBe(true);
-        });
-    });
-
     describe('animation', function() {
         var element;
 

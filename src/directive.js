@@ -1,7 +1,7 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. register as an anonymous module.
-        define(['exports', 'angular', factory]);
+        define(['exports', 'angular'], factory);
     } else if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
         // CommonJS
         factory(exports, require('angular'));
@@ -10,6 +10,7 @@
     }
 }(this, function(exports, angular) {
     "use strict";
+
     var app = angular.module('angularTitip', []);
 
     app.directive('tooltip', function() {
@@ -45,14 +46,6 @@
                     $element.attr('data-title', title);
                 }
 
-                function setBorder(border) {
-                    if (border === true || border === 'true') {
-                        $element.addClass('thick-border');
-                    } else {
-                        $element.removeClass('thick-border');
-                    }
-                }
-
                 function setAnimation(animation) {
                     if (lastAnimation !== null && lastAnimation !== animation) {
                         $element.removeClass('titip-' + lastAnimation);
@@ -70,7 +63,6 @@
                 $attr.$observe('title', setTitle);
                 $attr.$observe('tooltipTitle', setTitle);
                 $attr.$observe('tooltipTheme', setTheme);
-                $attr.$observe('tooltipBorder', setBorder);
                 $attr.$observe('tooltipAnimation', setAnimation);
             }
         };

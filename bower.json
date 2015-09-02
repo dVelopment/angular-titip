@@ -1,6 +1,6 @@
 {
   "name": "angular-titip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/dVelopment/angular-titip",
   "authors": [
     "Daniel Holzmann <d@velopment.at>"
@@ -24,7 +24,7 @@
     "bower",
     "test",
     "tests",
-    "doc",
+    "examples",
     "src",
     ".editorconfig",
     ".gitignore",
@@ -38,6 +38,7 @@
     "titip": "*"
   },
   "devDependencies": {
-    "angular-mocks": "~1.4.5"
+    "angular-mocks": "~1.4.5",
+    "requirejs": "~2.1.20"
   }
 }
